@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Unite test to <ImageGridItem /> Correctly Render 1`] = `
+<a
+  href="https://giphy.com/gifs/rurouni-kenshin-samurai-x-eo8UrZwpvjPHi"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <div
+    className="img-container animate__animated animate__fadeIn animate__delay-0.5s"
+  >
+    <img
+      alt="img"
+      className="img-item"
+      src="https://giphy.com/gifs/rurouni-kenshin-samurai-x-eo8UrZwpvjPHi"
+    />
+    <div
+      className="line-container"
+    >
+      <span
+        className="single-line"
+      >
+        Gif Title
+      </span>
+    </div>
+  </div>
+</a>
+`;

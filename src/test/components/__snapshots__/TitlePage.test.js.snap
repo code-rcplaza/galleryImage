@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests on <TitlePage /> Should be correctly render  1`] = `
+<div
+  className="container-sub-header"
+>
+  <h1
+    className="title-page"
+  >
+    This a image gallery
+  </h1>
+  <p
+    className="sub-title"
+  >
+    By Ricardo Plaza
+  </p>
+</div>
+`;

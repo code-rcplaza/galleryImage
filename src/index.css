@@ -1,13 +1,209 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+@font-face {
+  font-family: 'SofiaPro';
+  src        : local('SofiaPro'), url(./asstes/sofiapro-light.otf) format('opentype');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  font-family    : SofiaPro, 'Varela Round', sans-serif;
+  text-decoration: none;
+  margin         : 0;
+  padding        : 0;
+}
+
+body {
+  background-color: #f5f6fa;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+}
+
+.single6 {
+  height           : 60px;
+  width            : 60px;
+  border-radius    : 50%;
+  background-color : #90C695;
+  -webkit-animation: single6 1s infinite ease-in;
+  animation        : single6 1s infinite ease-in;
+}
+
+@-webkit-keyframes single6 {
+  0% {
+    -webkit-transform: scale(0);
+    transform        : scale(0);
+    opacity          : 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform        : scale(1);
+    opacity          : 0;
+  }
+}
+
+@keyframes single6 {
+  0% {
+    -webkit-transform: scale(0);
+    transform        : scale(0);
+    opacity          : 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform        : scale(1);
+    opacity          : 0;
+  }
+}
+
+header {
+  width           : 100%;
+  background-color: #161515;
+}
+
+header h2 {
+  margin-left: 17px;
+  padding    : 15px;
+  color      : #ffffff;
+}
+
+.container-sub-header {
+  display         : block;
+  width           : 100%;
+  height          : auto;
+  padding-top     : 15px;
+  padding-bottom  : 80px;
+  background-color: #252021;
+  margin-bottom: -65px;
+}
+
+.title-page {
+  width      : 80%;
+  font-size  : 2rem;
+  padding-top: 50px;
+  text-align : center;
+  color      : #ffffff;
+  ;
+  margin    : 0px auto;
+  font-style: normal
+}
+
+.sub-title {
+  width         : 80%;
+  font-size     : 1rem;
+  padding-top   : 10px;
+  padding-bottom: 50px;
+  text-align    : center;
+  color         : #ffffff;
+  margin        : 0px auto;
+}
+
+.loading {
+  align-items     : center;
+  border          : 2px solid rgba(38, 38, 38, 0.15);
+  border-radius   : 5px;
+  display         : flex;
+  flex-direction  : column;
+  margin          : auto auto;
+  width           : 250px;
+  background-color: #FFFFFF;
+}
+
+.loader-container {
+  align-items     : center;
+  background-color: #ffffff;
+  border          : 2px solid rgba(38, 38, 38, 0.15);
+  display         : flex;
+  justify-content : center;
+  height          : 150px;
+  margin-top      : 15px;
+  width           : 90%;
+}
+
+.container {
+  display              : grid;
+  gap                  : 1em;
+  grid-template-columns: repeat(2, 1fr);
+  margin               : 0px auto 50px auto;
+  width                : 80%;
+}
+
+.img-container {
+  align-items     : center;
+  background-color: #ffffff;
+  cursor          : pointer;
+  display         : flex;
+  flex-direction  : column;
+  border-radius   : 5px;
+  width           : 90%;
+  height          : 100%;
+  box-shadow      : 1px 1px 5px 0px rgba(38, 38, 38, 0.61);
+}
+
+.img-container:hover {
+  box-shadow: 2px 2px 20px 0px rgba(38, 38, 38, 0.61);
+  transition: linear 0.2s;
+}
+
+.img-container:hover .single-line {
+  color     : #2f3640;
+  transition: linear 0.2s;
+}
+
+.img-container .img-item {
+  border-radius: 3px 3px 0px 0px;
+  width        : 100%;
+  max-height   : 150px;
+  min-width    : 100px;
+}
+
+.line-container {
+  display        : flex;
+  height         : 40px;
+  justify-content: center;
+  width          : 100%;
+}
+
+.single-line {
+  height     : 20px;
+  margin     : 12px 0px;
+  overflow   : hidden;
+  width      : 80%;
+  text-align : center;
+  color      : rgba(38, 38, 38, 0.61);
+  font-weight: 0.8rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .img-container .img-item {
+    max-height: 140px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .img-container .img-item {
+    border-radius: 3px 3px 0px 0px;
+    width        : 100%;
+    max-height   : 270px;
+  }
+
+  .container-sub-header {
+    display         : block;
+    width           : 100%;
+    height          : auto;
+    padding-top     : 35px;
+    padding-bottom  : 140px;
+    background-color: #252021;
+    margin-bottom: -125px;
+  }
 }

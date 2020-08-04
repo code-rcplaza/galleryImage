@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests on <App /> Should be correctly render  1`] = `
+<Fragment>
+  <NavBar />
+  <TitlePage />
+  <ImageGrid
+    category="photos"
+    key="photos"
+  />
+</Fragment>
+`;
